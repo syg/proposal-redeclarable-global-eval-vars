@@ -11,7 +11,7 @@ Currently, at the global toplevel, it is an error to:
 
 1. Redeclare a `var` or `function` binding with a `let` or `const` of the same name
 1. Redeclare a non-configurable global property with a `let` or `const` of the same name
-1. Redeclare a `let` or `const with a `let or `const` of the same name
+1. Redeclare a `let` or `const` with a `let` or `const` of the same name
 
 While all global var and function bindings are also global properties, (1) is distinct from (2) because `var` and `function` bindings introduced by sloppy direct `eval` at the global toplevel are configurable (unlike `var` bindings introduced via script, which are non-configurable).
 
